@@ -1,0 +1,41 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "Audio Plugin Host Plugin for Unreal Engine 5",
+  "Description": "Win64 VST3 Audio Effect を Submix でホストする Unreal Engine 5 プラグインです。",
+  "Category": "Audio",
+  "CreatedBy": "Y.Nakaue",
+  "CreatedByURL": "https://github.com/Y-Nakaue",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "EngineVersion": "5.8.0",
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "Installed": false,
+  "EnabledByDefault": false,
+  "SupportedTargetPlatforms": [
+    "Win64"
+  ],
+  "Modules": [
+    {
+      "Name": "AudioPluginHostRuntime",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": ["Win64"]
+    },
+    {
+      "Name": "AudioPluginHostVST3",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": ["Win64"]
+    },
+    {
+      "Name": "AudioPluginHostEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": ["Win64"]
+    }
+  ]
+}
